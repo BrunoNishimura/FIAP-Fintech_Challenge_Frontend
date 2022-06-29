@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>UTM | Fintech</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/cash.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="css/quill/quill.snow.css" rel="stylesheet" />
+    <link href="css/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="css/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="css/simple-datatables/style.css" rel="stylesheet" />
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="dashboard.html" class="logo d-flex align-items-center">
+          <span class="d-none d-lg-block">UTM - Fintech</span>
+        </a>
+      </div>
+    
+      <nav class="header-nav ms-auto">
+        <div class="search-bar">
+          <form
+            class="search-form d-flex align-items-center"
+            method="POST"
+            action="#"
+          >
+            <input
+              type="text"
+              name="query"
+              placeholder="Search"
+              title="Enter search keyword"
+            />
+            <button type="submit" title="Search">
+              <img class="assets-login" src="assets/search.png"/>
+            </button>
+          </form>
+        </div>    
+      </nav>
+    </header>
+
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+      
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="#">
+            <span>Editar perfil</span>
+          </a>
+        </li>
+        
+        <li class="nav-heading">Acessos</li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="#">
+            <span>F.A.Q</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="index.html">
+            <span>Sair</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Dashboard</h1>
+      </div>
+      
+      <section class="section dashboard">
+        <div class="row">
+          <div class="col-lg-16">
+            <div class="row">
+              <div class="col-xxl-4 col-md-6">
+                <div class="card info-card total-card">
+  
+                  <div class="card-body">
+                    <h5 class="card-title">Total <span>| Janeiro</span></h5>
+
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="d-flex align-items-center justify-content-center"
+                      >
+                      </div>
+                      <div class="ps-3">
+                        <h6>R$ 10.000,00</h6>
+                        <span class="text-success small pt-1 fw-bold">12%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-xxl-4 col-md-6">
+                <div class="card info-card last-mounth-card">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Mês passado <span>| Dezembro - 2021</span>
+                    </h5>
+
+                    <div class="d-flex align-items-center">
+                      <div class="ps-3">
+                        <h6>R$ 4.300,00</h6>
+                        <span class="text-success small pt-1 fw-bold">8%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-xxl-4 col-xl-12">
+                <div class="card info-card last-year-card">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Ano passado <span>| 2021</span>
+                    </h5>
+
+                    <div class="d-flex align-items-center">
+                      <div class="ps-3">
+                        <h6>R$ 5.544,00</h6>
+                        <span class="text-danger small pt-1 fw-bold">12%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Bloco de notas</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="card recent-sales overflow-auto">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Histórico de compras
+                    </h5>
+
+                    <table class="table table-borderless datatable">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Data</th>
+                          <th scope="col">Produto</th>
+                          <th scope="col">Preço</th>
+                          <th scope="col">Informações</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row"><a href="#">1</a></th>
+                          <td>13 de Janeiro de 2022 - 20:00</td>
+                          <td>
+                            <a href="#" class="text-primary"
+                              >Lanche</a
+                            >
+                          </td>
+                          <td>R$ 27,00</td>
+                          <td>
+                            <span class="badge bg-success">Ver mais</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><a href="#">2</a></th>
+                          <td>10 de Dezembro de 202 - 9:00</td>
+                          <td>
+                            <a href="#" class="text-primary"
+                              >Café</a
+                            >
+                          </td>
+                          <td>R$ 7,00</td>
+                          <td>
+                            <span class="badge bg-success">Ver mais</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+  </body>
+</html>
